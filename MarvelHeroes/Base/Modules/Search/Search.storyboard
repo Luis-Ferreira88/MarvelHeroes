@@ -28,7 +28,7 @@
         <!--Search Heroes-->
         <scene sceneID="LOJ-82-wSe">
             <objects>
-                <tableViewController id="Z5d-qZ-T0E" sceneMemberID="viewController">
+                <tableViewController id="Z5d-qZ-T0E" customClass="SearchView" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aOT-S3-HcS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-Sv-wOf">
                                                     <rect key="frame" x="16" y="5" width="288" height="33.5"/>
                                                     <state key="normal" title="Search"/>
+                                                    <connections>
+                                                        <action selector="selectSearch:" destination="Z5d-qZ-T0E" eventType="touchUpInside" id="fpI-qc-di6"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -87,6 +90,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Search Heroes" id="9bk-W1-CnK"/>
+                    <connections>
+                        <outlet property="textFieldSearchName" destination="GbE-ae-Rxe" id="tlZ-6H-zvg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSz-lM-5vT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
