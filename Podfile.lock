@@ -1,0 +1,20 @@
+PODS:
+  - Kingfisher (4.9.0)
+  - SwiftHash (2.0.2)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.0)
+  - SwiftHash
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - SwiftHash
+
+SPEC CHECKSUMS:
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  SwiftHash: 6d312abe61c8359bdef8d0093642f3a70b1c17ba
+
+PODFILE CHECKSUM: 56c2068561ff37b01216ceb331507a1d701412ff
+
+COCOAPODS: 1.5.3
