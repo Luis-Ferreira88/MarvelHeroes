@@ -14,6 +14,10 @@ class SearchView: UITableViewController {
     
     @IBOutlet weak var textFieldSearchName: UITextField!
     
+    //MARK: - Properties
+    
+    private lazy var viewModel: SearchViewModel = SearchViewModel(delegate: self)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +27,22 @@ class SearchView: UITableViewController {
     //MARK: - Actions
     
     @IBAction func selectSearch(_ sender: UIButton) {
+        if let text = textFieldSearchName.text {
+            viewModel.search(text: text)
+        }
         
     }
     
     //MARK: - Methods
     
     func move() {
-        performSegue(withIdentifier: "", sender: nil)
+        performSegue(withIdentifier: SearchString.resultsSegue, sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultsView = segue.destination as? ResultView {
+            
+        }
     }
     
     

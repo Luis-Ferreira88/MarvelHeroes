@@ -1,5 +1,5 @@
 PODS:
-  - Kingfisher (4.9.0)
+  - Kingfisher (4.10.0)
   - SwiftHash (2.0.2)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - SwiftHash
 
 SPEC CHECKSUMS:
-  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
   SwiftHash: 6d312abe61c8359bdef8d0093642f3a70b1c17ba
 
 PODFILE CHECKSUM: 56c2068561ff37b01216ceb331507a1d701412ff

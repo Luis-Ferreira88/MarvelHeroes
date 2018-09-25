@@ -92,11 +92,20 @@
                     <navigationItem key="navigationItem" title="Search Heroes" id="9bk-W1-CnK"/>
                     <connections>
                         <outlet property="textFieldSearchName" destination="GbE-ae-Rxe" id="tlZ-6H-zvg"/>
+                        <segue destination="oRN-am-B9M" kind="show" identifier="showResults" id="OQp-Dr-iea"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSz-lM-5vT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="290.625" y="158.45070422535213"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="mc9-9q-nkg">
+            <objects>
+                <viewControllerPlaceholder id="oRN-am-B9M" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l5z-cf-ZEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="158"/>
         </scene>
     </scenes>
 </document>

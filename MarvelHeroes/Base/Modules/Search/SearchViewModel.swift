@@ -14,4 +14,19 @@ class SearchViewModel {
     
     private var marvel: MarvelResponse?
     private var delegate: SearchViewDelegate?
+    
+    var transporter: ResultTransporter {
+        return ResultTransporter(marvelData: marvel?.data ?? MarvelData())
+    }
+    
+    init(delegate: SearchViewDelegate?) {
+        self.delegate = delegate
+    }
+    
+    func search(text: String) {
+        SearchRequest(text: text).search { [weak self] response in
+            self?.marvel = self
+            self?.delegate?.search(sucess: self?.marvel != nil)
+        }
+    }
 }
