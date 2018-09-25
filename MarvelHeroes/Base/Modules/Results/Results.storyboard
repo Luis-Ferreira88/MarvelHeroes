@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Results View-->
         <scene sceneID="xsg-uq-Mve">
             <objects>
-                <tableViewController id="88F-WU-Pqt" sceneMemberID="viewController">
+                <tableViewController id="88F-WU-Pqt" customClass="ResultsView" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lig-Na-Odd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="RaJ-v8-8OX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="RaJ-v8-8OX" customClass="HeroCell" customModule="MarvelHeroes" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RaJ-v8-8OX" id="1G9-4j-a6d">
@@ -58,6 +58,11 @@
                                         <constraint firstItem="KvY-s3-a6H" firstAttribute="leading" secondItem="ZNG-i7-BEi" secondAttribute="trailing" constant="10" id="kaR-lk-ixN"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="KvY-s3-a6H" id="WYx-jn-Idn"/>
+                                    <outlet property="heroImageView" destination="ZNG-i7-BEi" id="J54-Jy-vJe"/>
+                                    <outlet property="nameLabel" destination="NIf-H0-Gae" id="gio-xX-TBE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

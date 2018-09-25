@@ -9,6 +9,8 @@
 import Foundation
 
 struct MarvelResponse: Codable {
+    
     let code: Int
     let data: MarvelData
+
 }

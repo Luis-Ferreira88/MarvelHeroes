@@ -9,9 +9,11 @@
 import Foundation
 
 struct MarvelData: Codable {
-    let offset: Int
-    let limit: Int
-    let total: Int
-    let count: Int
-    let results: [Hero]
+    
+    var offset: Int = 0
+    var limit: Int = 0
+    var total: Int = 0
+    var count: Int = 0
+    var results = [Hero]()
+
 }

@@ -9,9 +9,11 @@
 import Foundation
 
 struct Hero: Codable {
+    
     let id: Int
     let name: String
     let description: String
     let thumbnail: Thumbnail
     let urls: [HeroURL]
+
 }

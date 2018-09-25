@@ -9,6 +9,7 @@
 import Foundation
 
 struct Thumbnail: Codable {
+    
     private let path: String
     private let fileExtension: String
     
@@ -20,4 +21,5 @@ struct Thumbnail: Codable {
         case path
         case fileExtension = "extension"
     }
+    
 }
